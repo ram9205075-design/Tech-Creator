@@ -1,0 +1,65 @@
+/* Custom Styles for Ram's Portfolio */
+body {
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+    cursor: crosshair; /* Premium tech cursor */
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(168, 255, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Colors & Glows */
+.neon-text { 
+    color: #a8ff00; 
+    text-shadow: 0 0 10px rgba(168, 255, 0, 0.3);
+}
+
+.blue-text { 
+    color: #00d4ff; 
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Particle Burst logic */
+.particle-neon {
+    position: fixed;
+    pointer-events: none;
+    border: 2px solid #a8ff00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: expand-fade 0.7s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes expand-fade {
+    0% { width: 0; height: 0; opacity: 1; border-width: 3px; }
+    100% { width: 120px; height: 120px; opacity: 0; border-width: 1px; }
+}
+
+/* Scroll Reveal Styling */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #a8ff00; border-radius: 10px; }
