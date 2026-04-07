@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram | Tech Creator & Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="splash" class="fixed inset-0 bg-[#050505] flex flex-col items-center justify-center z-[100] transition-all duration-1000">
+        <h2 class="text-white tracking-[0.8em] text-[10px] mb-8 animate-pulse italic text-center">RAM CREATIVE STUDIO</h2>
+        <button id="init-btn" class="px-12 py-4 border border-[#a8ff00] text-[#a8ff00] uppercase tracking-[0.4em] text-xs hover:bg-[#a8ff00] hover:text-black transition-all duration-500 font-bold">
+            Welcome
+        </button>
+    </div>
+
+    <main id="main-site" class="hidden">
+        <nav class="fixed top-0 w-full z-50 px-6 md:px-12 py-6 flex justify-between items-center glass">
+            <div class="text-xl font-extrabold tracking-tighter">RAM<span class="neon-text">.</span></div>
+            <div class="hidden md:flex gap-8 text-[10px] uppercase tracking-widest font-bold">
+                <a href="#work" class="hover:text-[#a8ff00] transition">Portfolio</a>
+                <a href="#services" class="hover:text-[#a8ff00] transition">Services</a>
+                <a href="#hire" class="hover:text-[#a8ff00] transition">Hire Me</a>
+            </div>
+        </nav>
+
+        <section class="h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
+            <div class="z-10">
+                <h1 class="text-5xl md:text-9xl font-extrabold tracking-tighter leading-none mb-6 uppercase">
+                    Build <span class="neon-text">Code.</span><br>
+                    Edit <span class="blue-text">Viral.</span>
+                </h1>
+                <p class="text-slate-400 max-w-xl mx-auto mb-10 text-sm md:text-base">
+                    Video Editor for YouTube & Shorts | Graphic Designer | Full-Stack Web Developer.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#work" class="bg-[#a8ff00] text-black px-10 py-4 font-bold uppercase text-[10px] tracking-widest">Explore Work</a>
+                    <a href="mailto:hire@ram.com" class="glass px-10 py-4 text-white font-bold uppercase text-[10px] tracking-widest border border-white/10 hover:bg-white/5 transition">Get in Touch</a>
+                </div>
+            </div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#a8ff00]/5 blur-[120px] rounded-full"></div>
+        </section>
+
+        <section id="work" class="py-32 container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 tracking-tighter border-l-4 border-[#a8ff00] pl-6 uppercase">Selected <span class="neon-text">Artifacts</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="reveal glass p-2 rounded-2xl group">
+                    <div class="aspect-video bg-neutral-900 rounded-xl mb-6 overflow-hidden relative">
+                        <iframe class="w-full h-full opacity-50 group-hover:opacity-100 transition" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold">YouTube Documentary & Reels</h4>
+                        <p class="text-slate-500 text-sm mt-2">High-retention editing, color grading, and viral hooks for top creators.</p>
+                    </div>
+                </div>
+
+                <div class="reveal glass p-2 rounded-2xl group" style="transition-delay: 0.2s;">
+                    <div class="aspect-video bg-[#0a0a0a] rounded-xl mb-6 flex items-center justify-center border border-white/5 overflow-hidden">
+                        <img src="assets/images/web-project.webp" alt="Web Dev Project" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold">Full-Stack Web Platforms</h4>
+                        <p class="text-slate-500 text-sm mt-2">Fast, responsive React apps with modern UI/UX for SaaS businesses.</p>
+                    </div>
+                </div>
+
+                <div class="reveal glass p-2 rounded-2xl group">
+                    <div class="aspect-[4/3] bg-neutral-900 rounded-xl mb-6 overflow-hidden">
+                        <img src="assets/images/poster.webp" alt="Graphic Design" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold">Thumbnails & Ad Posters</h4>
+                        <p class="text-slate-500 text-sm mt-2">Eye-catching graphics that boost CTR and brand identity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-32 bg-white/[0.01]">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-20 tracking-tighter uppercase italic">Services <span class="neon-text">& Packages</span></h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="reveal glass p-10 text-left border-t-2 border-[#a8ff00]">
+                        <h3 class="font-bold text-lg mb-4 uppercase">Video Engine</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">4 Longform YT + 15 Shorts/Reels Monthly. Includes viral strategy.</p>
+                        <span class="text-[10px] text-slate-600 tracking-widest">STARTING AT $1500/MO</span>
+                    </div>
+                    <div class="reveal glass p-10 text-left border-t-2 border-[#00d4ff]">
+                        <h3 class="font-bold text-lg mb-4 uppercase">Web Experience</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">Custom Portfolio or Landing Page. SEO Optimized + Fast Load.</p>
+                        <span class="text-[10px] text-slate-600 tracking-widest">STARTING AT $800/BUILD</span>
+                    </div>
+                    <div class="reveal glass p-10 text-left border-t-2 border-white">
+                        <h3 class="font-bold text-lg mb-4 uppercase">Visual Brand</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">Thumbnails, Logos, and Ad posters designed for conversion.</p>
+                        <span class="text-[10px] text-slate-600 tracking-widest">CUSTOM QUOTE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="hire" class="py-40 text-center container mx-auto px-6 border-t border-white/5">
+            <h2 class="text-5xl md:text-8xl font-extrabold mb-12 tracking-tighter uppercase italic">Ready to <span class="neon-text">Scale?</span></h2>
+            <p class="text-slate-500 mb-12">Available for Q3 Freelance & Full-time Roles.</p>
+            <a href="mailto:hire@ram.com" class="text-2xl font-bold border-b-2 border-[#a8ff00] pb-2 hover:text-[#a8ff00] transition">hire@ram.com</a>
+            <div class="mt-24 flex justify-center gap-12 text-[10px] uppercase tracking-[0.4em] font-bold text-slate-600">
+                <a href="#" class="hover:text-white transition">YouTube</a>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">GitHub</a>
+            </div>
+            <p class="mt-20 text-[9px] text-slate-700 tracking-[0.3em] uppercase">© 2026 Designed & Coded by RAM</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
